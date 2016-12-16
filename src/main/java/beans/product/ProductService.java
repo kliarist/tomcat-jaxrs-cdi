@@ -1,5 +1,7 @@
 package beans.product;
 
+import beans.product.model.Product;
+
 import javax.enterprise.inject.Default;
 import javax.inject.Named;
 
@@ -9,7 +11,7 @@ import javax.inject.Named;
 @Default
 @Named
 public class ProductService implements IProductService {
-    public String sayHello(){
-        return "hello from prduct";
+    public Product sayHello(){
+        return new Product("new Product");
     }
 }
